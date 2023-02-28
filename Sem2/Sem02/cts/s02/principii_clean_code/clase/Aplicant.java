@@ -5,43 +5,49 @@ public abstract class Aplicant{
 	protected String prenume;
 	protected int varsta;
 	protected int punctaj;
-	protected int nr_proiecte;
-	protected String[] denumireProiect;
+	protected int nrProiecte;
+	protected String[] denumiriProiecte;
 	
 	
 	public String getNume() {
 		return nume;
 	}
+	
 	public void setNume(String nume) {
 		this.nume = nume;
 	}
+	
 	public String getPrenume() {
 		return prenume;
 	}
+	
 	public void setPrenume(String prenume) {
 		this.prenume = prenume;
 	}
+	
 	public int getVarsta() {
 		return varsta;
 	}
+	
 	public void setVarsta(int varsta) {
 		this.varsta = varsta;
 	}
+	
 	public void statut(){
 		if(punctaj>80)
 			System.out.println("Aplicantul "+nume+" "+prenume+" a fost acceptat.");
 		else
 			System.out.println("Aplicantul "+nume+" "+prenume+" nu a fost acceptat.");
-		}
+	}
+	
 	public int getPunctaj() {
 		return punctaj;
 	}
+	
 	public void setPunctaj(int punctaj) {
 		this.punctaj = punctaj;
 	}
 	
-	
-
 	
 	public Aplicant() {
 		super();
@@ -53,14 +59,16 @@ public abstract class Aplicant{
 		this.prenume = prenume;
 		this.varsta = varsta;
 		this.punctaj = punctaj;
-		this.nr_proiecte = nr_proiecte;
-		this.denumireProiect = denumireProiect;
+		this.nrProiecte = nr_proiecte;
+		this.denumiriProiecte = denumireProiect;
 	}
+	
 	public int getNr_proiecte() {
-		return nr_proiecte;
+		return nrProiecte;
 	}
+	
 	public void setNr_proiecte(int nr_proiecte) {
-		this.nr_proiecte = nr_proiecte;
+		this.nrProiecte = nr_proiecte;
 	}
 
 }
