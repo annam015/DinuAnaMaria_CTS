@@ -51,7 +51,6 @@ public abstract class Aplicant{
 	
 	public Aplicant() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 	public Aplicant(String nume, String prenume, int varsta, int punctaj, int nr_proiecte, String[] denumireProiect) {
 		super();

@@ -39,7 +39,6 @@ public class Angajat extends Aplicant{
 	
 	public int finantare() {
 		int s=10;
-		// TODO Auto-generated method stub
 		System.out.println("Angajatul "+getNume()+" "+getPrenume()+" primeste"+s+" Euro/zi in proiect.");
 		return s;
 	}

@@ -15,6 +15,7 @@ public class ReaderStudent extends ReaderAplicant{
 		super(file);
 	}
 
+	
 	@Override
 	public List<Aplicant> readAplicanti() throws FileNotFoundException {
 		Scanner input = new Scanner(new File(super.getNumeFisier()));

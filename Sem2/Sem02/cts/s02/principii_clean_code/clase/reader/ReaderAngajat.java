@@ -14,7 +14,7 @@ public class ReaderAngajat extends ReaderAplicant{
 	public ReaderAngajat(String file) {
 		super(file);
 	}
-
+	
 	@Override
 	public List<Aplicant> readAplicanti() throws FileNotFoundException {
 		

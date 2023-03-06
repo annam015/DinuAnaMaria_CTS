@@ -17,5 +17,6 @@ public abstract class ReaderAplicant {
 		return this.numeFisier;
 	}
 	
+	
 	public abstract List<Aplicant> readAplicanti() throws FileNotFoundException;
 }

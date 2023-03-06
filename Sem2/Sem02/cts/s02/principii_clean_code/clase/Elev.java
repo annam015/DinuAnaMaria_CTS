@@ -19,7 +19,6 @@ public class Elev extends Aplicant{
 		this.tutore = tutore;
 	}
 	
-	
 	@Override
 	public String toString() {
 		return "Elev: Nume=" + nume + ", Prenume=" + prenume + ", Varsta="
@@ -43,5 +42,4 @@ public class Elev extends Aplicant{
 		System.out.println("Angajatul "+getNume()+" "+getPrenume()+" primeste"+s+" Euro/zi in proiect.");
 		return s;
 	}
-	
 }
