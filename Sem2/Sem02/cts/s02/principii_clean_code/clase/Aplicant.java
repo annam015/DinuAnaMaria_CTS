@@ -1,5 +1,7 @@
 package cts.s02.principii_clean_code.clase;
 
+import java.util.Scanner;
+
 public abstract class Aplicant{
 	protected String nume;
 	protected String prenume;
@@ -7,7 +9,7 @@ public abstract class Aplicant{
 	protected int punctaj;
 	protected int nrProiecte;
 	protected String[] denumiriProiecte;
-	
+	protected static Integer pragAcceptare = 80;
 	
 	public String getNume() {
 		return nume;
@@ -33,25 +35,15 @@ public abstract class Aplicant{
 		this.varsta = varsta;
 	}
 	
-	public void statut(){
-		if(punctaj>80)
-			System.out.println("Aplicantul "+nume+" "+prenume+" a fost acceptat.");
-		else
-			System.out.println("Aplicantul "+nume+" "+prenume+" nu a fost acceptat.");
+	public void afisareStatus(){
+		System.out.println("Aplicantul "+ this.nume + " " + this.prenume + 
+				(this.punctaj > Aplicant.pragAcceptare ? "" : " nu") + " a fost acceptat.");
 	}
-	
-	public int getPunctaj() {
-		return punctaj;
-	}
-	
-	public void setPunctaj(int punctaj) {
-		this.punctaj = punctaj;
-	}
-	
 	
 	public Aplicant() {
 		super();
 	}
+	
 	public Aplicant(String nume, String prenume, int varsta, int punctaj, int nr_proiecte, String[] denumireProiect) {
 		super();
 		this.nume = nume;
@@ -69,5 +61,15 @@ public abstract class Aplicant{
 	public void setNr_proiecte(int nr_proiecte) {
 		this.nrProiecte = nr_proiecte;
 	}
+	
+	public void setPunctaj(int punctaj) {
+		this.punctaj = punctaj;
+	}
+	
+	public void setDenumiriProiecte(String[] denumiriProiecte) {
+		this.denumiriProiecte = denumiriProiecte;
+	}
 
+	public abstract void afisareFinantare();
+	
 }
